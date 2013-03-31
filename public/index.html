@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+      $.ajax({
+            url: 'http://biographer.herokuapp.com/api/bio/3f8f51e1aa14cdd87cffeaa26bb0ce13'
+            , dataType: 'json'
+            , success: function(data){
+              console.log(data);
+              }
+              , error: function(data, derp, error){
+                console.log(data);
+                console.log(error);
+                console.log(derp);
+              }
+          });
+        </script>
+
+      </head>
+
+      <body></body>
+
+</html>

@@ -14,13 +14,9 @@ end
 
 __END__
 @@index
-<%= "#{@bio['first_name']} #{@bio['last_name']}" %>
-<br>
-<%= @bio["about_me"] %>
-<br>
-<%= @bio["phone_number"] %>
-<br>
-<%= @bio["occupation"] %>
-<br>
-<%= @bio["school"] %>
+<h1><%= "#{@bio['first_name']} #{@bio['last_name']}" %></h1>
+<h1><%= @bio["about_me"] %></h1>
+<h1><%= @bio["phone_number"] %></h1>
+<h1><%= @bio["occupation"] %></h1>
+<h1><%= @bio["school"] %></h1>
 

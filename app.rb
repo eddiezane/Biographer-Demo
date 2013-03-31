@@ -3,6 +3,11 @@ require 'rest-client'
 require 'json'
 require 'digest/md5'
 
+get '/' do
+  "<h1>Navigate to /email</h1>
+  <h3>Where email is your email</h3>"
+end
+
 get '/:email' do
   # File.read(File.join('public', 'index.html'))
   @email = Digest::MD5.hexdigest(params[:email])
@@ -19,4 +24,3 @@ __END__
 <h1><%= @bio["phone_number"] %></h1>
 <h1><%= @bio["occupation"] %></h1>
 <h1><%= @bio["school"] %></h1>
-
